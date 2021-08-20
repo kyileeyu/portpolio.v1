@@ -4,6 +4,46 @@
   margin: 0 auto;
 }
 
+/* svg 색상 입력 */
+
+.js svg {
+  fill: #f7df1e;
+}
+.ts svg {
+  fill: #3178c6;
+}
+.c svg {
+  fill: #00599c;
+}
+.html svg {
+  fill: #e34f26;
+}
+.css {
+  fill: #1572b6;
+}
+.react svg {
+  fill: #61dafb;
+}
+.bootstrap svg {
+  fill: #7952b3;
+}
+.git svg {
+  fill: #181717;
+}
+.gitflow svg {
+  fill: #f05032;
+}
+.slack svg {
+  fill: #4a154b;
+}
+.figma svg {
+  fill: #f24e1e;
+}
+svg {
+  vertical-align: middle;
+}
+
+/* code */
 a {
   color: #000;
   text-decoration: none;
@@ -14,16 +54,22 @@ a {
 /* header */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.blank {
+  width: 600px;
+}
+nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 20px;
-  background-color: #c2c0c1;
+  padding: 10px 0;
+  background-color: #11817a;
 }
 
 nav a {
-  margin-left: 50px;
+  margin-left: 30px;
   font-size: 14px;
 }
 
@@ -37,18 +83,43 @@ main {
   padding: 0 100px;
   height: 100vh;
   background-color: #c2c0c1;
-  display: flex;
-  align-items: right;
-  justify-content: space-between;
-  background-image: url(./asset/right.jpg);
+  background-image: url(./asset/background.jpg);
+  background-position: right;
   background-repeat: no-repeat;
 }
 
-.text {
-  /* display: none; */
-  font-size: 42px;
+.typing {
+  padding-top: 40vh;
   font-weight: 700;
   line-height: 1.3;
+}
+
+p.result1,
+p.result2 {
+  text-align: left;
+  display: inline-block;
+  font-size: 50px;
+  height: 70px;
+  border-right: 1px solid #c2c0c1;
+  padding-right: 2px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 5px;
+}
+p.cursor {
+  animation: cursor 0.5s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #c2c0c1;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #c2c0c1;
+  }
 }
 
 .main-img {
@@ -59,8 +130,41 @@ main {
 }
 
 /* about */
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 70%;
+  box-shadow: 2px 2px 20px #ddd;
+  overflow: hidden;
+}
+.profile img {
+  object-fit: cover;
+  object-position: center;
+  margin-left: 10px;
+  width: 80%;
+}
+
+.my-info {
+  text-align: center;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 #about {
   margin: 100px 100px;
+}
+.profile-container {
+  margin-bottom: 100px;
 }
 #growth {
   margin: 0 100px;
@@ -123,12 +227,13 @@ svg {
 }
 
 .stack-lists {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   line-height: 1.3;
 }
 
+.stack-lists li {
+  margin-bottom: 10px;
+}
 .stack-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -137,7 +242,7 @@ svg {
 .stack-title {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .edu-list {
