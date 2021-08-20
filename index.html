@@ -24,17 +24,26 @@
     </header>
 
     <main id="main">
-        <h2 class="introduce-1">Front-end developer<br> 유승현 입니다.</h2>
-        
-        <div class="main-img">
-            <img alt="main" class="main-asset" src="/asset/main.jpeg">
+        <div class="typing">
+            <span class="text"></span>
         </div>
+        <!-- <div class="main-img">
+            <img alt="main" class="main-asset" src="/asset/left.png">
+        </div> -->
 
         
     </main>
-    
+    <div id="about" class="">
+        <div class="title">About me</div>
+        <h2 class="introduce-2">
+            안녕하세요! 
+            도전과 성장을 좋아하는 유승현 입니다.<br/>
+            변화가 눈에 보이는 Front-end 분야를 좋아해 공부하는 중입니다.<br/>
+            열정적인 에너지를 가지며 동료와 나 모두의 성장을 꿈꾸며 함께하고 있습니다.
+        </h2>
+    </div>
     <div id="about">
-        
+        <div class="title">Profile</div>
         <div class="info">
             <div class="my-info">
                 
@@ -50,11 +59,14 @@
                     <strong>Git : </strong>
                     https://github.com/kyileeyu
                 </a>
+                <br>
                 <a href="e-mail">
                     <!-- <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail</title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg> -->
                     <strong>E-mail : </strong>
                     kyileeeyu@gmail.com
                 </a>
+                <br>
+
                 <a href="https://velog.io/@kyileeyu">
                     <!-- <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Blogger</title><path d="M21.976 24H2.026C.9 24 0 23.1 0 21.976V2.026C0 .9.9 0 2.025 0H22.05C23.1 0 24 .9 24 2.025v19.95C24 23.1 23.1 24 21.976 24zM12 3.975H9c-2.775 0-5.025 2.25-5.025 5.025v6c0 2.774 2.25 5.024 5.025 5.024h6c2.774 0 5.024-2.25 5.024-5.024v-3.975c0-.6-.45-1.05-1.05-1.05H18c-.524 0-.976-.45-.976-.976 0-2.776-2.25-5.026-5.024-5.026zm3.074 12H9c-.525 0-.975-.45-.975-.975s.45-.976.975-.976h6.074c.526 0 .977.45.977.976s-.45.976-.975.976zm-2.55-7.95c.527 0 .976.45.976.975s-.45.975-.975.975h-3.6c-.525 0-.976-.45-.976-.975s.45-.975.975-.975h3.6z"/></svg> -->
                     <strong>Blog : </strong>
@@ -64,23 +76,17 @@
             
             <div class="education">
                 <h3 class="stack-title">Education</h3>
-                <ul class="stack-list">
-                    <li>2020.09 가톨릭대학교 컴퓨터정보공학부 전과</li>
-                    <li>2017.03 가톨릭대학교 화학과 입학</li>
-                    <li>2017.02 소명여자고등학교 졸업</li>
+                <ul class="edu-list">
+                    <li>
+                        <strong>2020.09 </strong>
+                        가톨릭대학교 컴퓨터정보공학부 전과</li>
+                    <li><strong>2017.03 </strong> 가톨릭대학교 화학과 입학</li>
+                    <li><strong>2017.02 </strong> 소명여자고등학교 졸업</li>
                 </ul> 
             </div>
         </div>
 
-        <div class="introduce">
-            <div class="title">About me</div>
-            <h2 class="introduce-2">
-                안녕하세요! 
-                도전과 성장을 좋아하는 유승현 입니다.<br/>
-                변화가 눈에 보이는 Front-end 분야가 재밌어 공부하고 있습니다.<br/>
-                열정적인 에너지를 가지며 동료와 나 모두의 성장을 꿈꾸며 함께하고 있습니다.
-            </h2>
-        </div>
+        
     
 
         <div class="stack">
@@ -120,48 +126,65 @@
     <div id="growth">
         <h1 class="title">Growth</h1>
 
-        <dl>
-            <dt class="grow-list">
-                cap2 '소울 룸메이트' 팀 프로젝트 기획
-            </dt>
-            <dd class="grow-content">
-                `
-            </dd>
+        <dl class="grow-lists">
+            <div class="img">
+                <img src="./asset/soulmate-poster.png">
+                <img src="./asset/soulmate-result.png">
+            </div>
+            <div class="desc">
+                <dt class="grow-list">
+                    기숙사 룸메이트 매칭'소울 룸메이트' 앱 기획
+                </dt>
+                <dd class="grow-content">
+                    학교 교양시간을 통해 처음으로 앱 기획을 맡았습니다.
+                    기숙사 학우들이 룸메이트와 발생하는 갈등을 해소하고자, 나와 맞는 룸메이트를 찾는
+                    어플 '소울메이트'를 기획했습니다.
+                    개발자와 함께 활동하며 서비스 출시와 개발에 흥미를 느끼는 계기가 되었습니다.
+                </dd>
+            </div>
 
-            <dt class="grow-list">
-                네이버 커넥트 재단 행사 참가
-            </dt>
-            <dd class="grow-content">
+            <div class="img">
+                <img src="./asset/sef.png">
+                <img src="./asset/sef-session.png">
+            </div>
+            <div class="desc">
+                <dt class="grow-list">
+                    SEF 2018 소프트웨어 페스티벌 참가
+                </dt>
+                <dd class="grow-content">
+                    개발에 관심을 갖던 도중, 네이버 connect 재단에서 주최하는 SEF 2018 페스티벌에 참가했습니다.
+                    집입장벽이 높다 생각한 개발에 대해 고정관념을 부수는 계기가 되었으며,
+                    네이버에서 일하는 개발자의 진로를 꿈꾸게 되었습니다.
+                </dd>
+            </div>
 
-            </dd>
+            <div class="img">
+                <img src="./asset/alcuk.png">
+            </div>
+            <div class="desc">
+                <dt class="grow-list">
+                    알고리즘 동아리 ALCUK
+                </dt>
+                <dd class="grow-content">
+                    알고리즘에 대해 깊이 알고싶어 교내 알고리즘 동아리 ALCUK에 들어가 활동했습니다. 
+                    매주 진행되는 세미나를 듣고 알고리즘에 대해 쉽게 배울 수 있었으며,
+                    주니어 대상으로 진행되는 세미나를 기획하고 풀이하면서 실력을 향상시킬 수 있었습니다.
+                </dd>
+            </div>
 
-            <dt class="grow-list">
-                컴퓨터 정보공학부로의 전과
-            </dt>
-            <dd class="grow-content">
-
-            </dd>
-
-            <dt class="grow-list">
-                알고리즘 동아리 ALCUK
-            </dt>
-            <dd class="grow-content">
-
-            </dd>
-
-            <dt class="grow-list">
-                (주)유앤아이팩 페이지 관리자 근무
-            </dt>
-            <dd class="grow-content">
-
-            </dd>
-
-            <dt class="grow-list">
-                창업동아리 케이쿡
-            </dt>
-            <dd class="grow-content">
-
-            </dd>
+            <div class="img">
+                <img src="./asset/unipack.png">
+                <img src="./asset/unipack-code.png">
+            </div>
+            <div class="desc">
+                <dt class="grow-list">
+                    (주)유앤아이팩 페이지 관리자 근무
+                </dt>
+                <dd class="grow-content">
+                    트래픽이 발생하는 웹 화면에서 활동해 보고싶어 쇼핑몰 회사의 관리자 업무에 지원했습니다. 
+                    다른 사람의 코드를 수정하며 전체적인 웹사이트의 구조를 알고 수정하는 기회가 되었습니다.
+                </dd>
+            </div>
         </dl>
 
     </div>
@@ -170,46 +193,96 @@
         <h1 class="title">Projects</h1>
 
         <div class="projects">
-            <div class="project-kcook">
-                <img>
-                <div class="project-name">케이쿡 웹페이지 개발</div>
-                <div class="due-time">
-                    <strong>개발기간 :</strong>
-                    2021.06 ~
+
+            <div class="project kcook">
+                <div class="project-img">
+                    <img src="./asset/kcook.png">
                 </div>
-                <div class="disc">
-                    창업동아리 케이쿡의 프론트앤드 개발로 참여해 1명의 서버개발자와 함께 사이트를 제작했습니다. 
+
+                <div class="desc">
+                    
+                    <div class="project-name">케이쿡 웹페이지 개발</div>
+                    <div class="due-time">
+                        2021.07 ~
+                    </div>
+                    <div class="description">
+                        창업동아리 케이쿡의 프론트앤드 개발로 참여해 1명의 서버개발자와 함께 사이트를 제작했습니다. 
+                    </div>
+                    <div class="use-stack">
+                        <span class="semi-title">사용기술 : </span>
+                        TypeScript, React, SCSS
+                    </div>
+                    <div class="function">
+                        <span class="semi-title">주요기능 : </span>
+                        dfdgdf
+                    </div>
+                    <div class="git-link">
+                        <span class="semi-title">GitHub : </span>
+                        dfdgdf
+                    </div>
                 </div>
-                <button>more</button>
             </div>
 
-            <div class="project-conprost">
-                <img>
-                <div class="project-name">콘프로스트 공모전 사이트</div>
-                <div class="due-time">
-                    <strong>개발기간 :</strong>
-                    2021.04 ~
+
+            <div class="project conprost">
+                
+                <div class="desc">
+                    
+                    <div class="project-name">conprost 웹 페이지 제작</div>
+                    <div class="due-time">
+                        2021.04 ~ 2021.05
+                    </div>
+                    <div class="description">
+                        개발자들의 팀매칭, 개발 관련 공모전 사이트 프론트엔드 개발에 참여했습니다.
+                    </div>
+                    <div class="use-stack">
+                        <span class="semi-title">사용기술 : </span>
+                        React, SCSS, Gitflow
+                    </div>
+                    <div class="function">
+                        <span class="semi-title">주요기능 : </span>
+                        dfdgdf
+                    </div>
+                    <div class="git-link">
+                        <span class="semi-title">GitHub : </span>
+                        https://github.com/winprost/conprost_front
+                    </div>
                 </div>
-                <div class="disc">
-                    개발자들의 팀매칭, 개발 관련 공모전 사이트 프론트엔드 개발에 참여했습니다.
+                <div class="project-img">
+                    <img src="./asset/kcook.png">
                 </div>
-                <button>more</button>
             </div>
 
-            <div class="project-mbti">
-                <img>
-                <div class="project-name">여행 mbti 테스트 제작</div>
-                <div class="due-time">
-                    <strong>개발기간 :</strong>
-                    2021.04 ~ 2021.05
+
+            <div class="project mbti">
+                <div class="project-img">
+                    <img src="./asset/mbti.png">
                 </div>
-                <div class="disc">
-                    순수 banila-javascript를 사용해 mbti 테스트를 제작했습니다.
+                <div class="desc">
+                    
+                    <div class="project-name">여행 mbti 테스트 제작</div>
+                    <div class="due-time">
+                        2021.04 ~ 2021.05
+                    </div>
+                    <div class="description">
+                        순수 banila-javascript를 사용해 mbti 테스트를 제작했습니다.
+                        디자인을 담당한 친구와 둘이서 작업했고, 전체 기획과 개발을 맡았습니다.
+                    </div>
+                    <div class="use-stack">
+                        <span class="semi-title">사용기술 : </span>
+                        JavaScript, CSS, HTML
+                    </div>
+                    <div class="function">
+                        <span class="semi-title">주요구성 : </span>
+                        메인화면, 질문화면, 테스트 결과, 공유 및 저장 기능
+                    </div>
+                    <div class="git-link">
+                        <span class="semi-title">Site : </span>
+                        <a href="https://travelmate-test.netlify.app/">https://travelmate-test.netlify.app/</a>
+                    </div>
                 </div>
-                <button>more</button>
             </div>
-        </div>
-    </div>
+
 
 
 
@@ -217,18 +290,54 @@
         <h1 class="title">Future</h1>
 
         <h2 class="future-title">삼성 SDS 알고리즘 특강 수강</h2>
-        <img class="future-img" alt="future goal image" src="">
-        <div class="future-content"></div>
+        <img class="future-img" alt="future goal image" src="./asset/algorithm.png">
+        <div class="future-content">
+            기존의 알고리즘 실력을 향상시킬 수 있는 기회로 삼성 SDS에서 주최하는 알고리즘 특강을 수강하고 싶습니다. 
+            BFS, DFS 등의 개념 알고리즘에 대한 기초를 탄탄하게 다지고 싶습니다.
+        </div>
 
         <h2 class="future-title">네이버 부스트캠프 지원</h2>
-        <img class="future-img" alt="future goal image" src="">
-        <div class="future-content"></div>
+        <img class="future-img" alt="future goal image" src="./asset/boostcamp.png">
+        <div class="future-content">
+            네이버 커넥트 재단에서 주최하는 부스트캠프에 웹 프로그램을 수강하고 싶습니다.
+            부스트캠프 멤버십을 통해 실무 개발 프로젝트를 진행하면서 네이버 프론트엔드 개발자를 향해 한걸음 나아가고 싶습니다.
+        </div>
 
         <h2 class="future-title">개인 플젝??</h2>
         <img class="future-img" alt="future goal image" src="">
-        <div class="future-content"></div>
+        <div class="future-content">
+
+        </div>
     </div>
 
-
 </body>
+<footer>
+    <div class="links">
+        <a href="https://github.com/kyileeyu" class="icon git">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://velog.io/@kyileeyu" class="icon velog">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Blogger</title><path d="M21.976 24H2.026C.9 24 0 23.1 0 21.976V2.026C0 .9.9 0 2.025 0H22.05C23.1 0 24 .9 24 2.025v19.95C24 23.1 23.1 24 21.976 24zM12 3.975H9c-2.775 0-5.025 2.25-5.025 5.025v6c0 2.774 2.25 5.024 5.025 5.024h6c2.774 0 5.024-2.25 5.024-5.024v-3.975c0-.6-.45-1.05-1.05-1.05H18c-.524 0-.976-.45-.976-.976 0-2.776-2.25-5.026-5.024-5.026zm3.074 12H9c-.525 0-.975-.45-.975-.975s.45-.976.975-.976h6.074c.526 0 .977.45.977.976s-.45.976-.975.976zm-2.55-7.95c.527 0 .976.45.976.975s-.45.975-.975.975h-3.6c-.525 0-.976-.45-.976-.975s.45-.975.975-.975h3.6z"/></svg>
+        </a>
+    </div>
+    © 2021. Seunghyun Yu. All rights reserved.
+</footer>
 </html>
+
+<script>
+
+    const content = "Front-end developer, \n 유승현 입니다.";
+    const text = document.querySelector(".typing");
+    let i = 0;
+
+    function typing(){
+        let txt = content[i++];
+        text.innerHTML += txt=== "\n" ? "<br/>": txt;
+        if (i > content.length) {
+            text.textContent = "";
+            i = 0;
+        }
+    }
+    setInterval(typing, 100)
+
+</script>
