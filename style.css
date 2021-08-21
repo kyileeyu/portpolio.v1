@@ -39,8 +39,24 @@
 .figma svg {
   fill: #f24e1e;
 }
+.python svg {
+  fill: #3776ab;
+}
 svg {
   vertical-align: middle;
+}
+.scss {
+  width: 30px;
+  height: auto;
+  display: flex;
+  margin: 0;
+  align-items: left;
+  justify-content: left;
+}
+.scss img {
+  width: 100%;
+  height: auto;
+  margin-right: 5px;
 }
 
 /* code */
@@ -132,7 +148,8 @@ p.cursor {
 /* about */
 
 .info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 
@@ -161,7 +178,12 @@ p.cursor {
 }
 
 #about {
-  margin: 100px 100px;
+  padding: 100px 100px;
+  background-image: url(./asset/quotes.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  background-size: 50%;
 }
 .profile-container {
   margin-bottom: 100px;
@@ -176,10 +198,12 @@ p.cursor {
 .info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   margin-bottom: 50px;
 }
 
+.edu {
+  margin-bottom: 50px;
+}
 .links {
   /* display: flex;
   flex-direction: column;
@@ -221,7 +245,12 @@ svg {
   text-align: center;
   line-height: 1.5;
 }
-
+.introduce-2 strong {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 30px;
+}
 /* education */
 
 .my-info {
@@ -271,14 +300,17 @@ svg {
   height: auto;
 }
 .grow-lists {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .grow-list {
   font-weight: 700;
   font-size: 20px;
 }
 /* project */
-
+#projects {
+  margin-top: 100px;
+}
 .projects {
   display: flex;
   flex-direction: column;
@@ -288,6 +320,7 @@ svg {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   max-width: 1000px;
+  height: 440px;
   margin-bottom: 30px;
   /* border: 1px solid #ddd; */
   border-radius: 20px;
@@ -300,13 +333,14 @@ svg {
 }
 
 .project-img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .project-img img {
-  width: inherit;
-  height: auto;
+  width: auto;
+  max-width: 440px;
+  height: 100%;
 }
 
 .growth {
@@ -322,7 +356,7 @@ svg {
   line-height: 1.2;
 }
 .desc {
-  margin: 0 50px;
+  margin: 0 30px;
   max-width: 500px;
   line-height: 2;
 }
@@ -330,6 +364,9 @@ svg {
 .project-name {
   font-size: 28px;
   font-weight: 700;
+}
+.due-time {
+  color: #aaa;
 }
 .description {
   margin-top: 30px;
