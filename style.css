@@ -84,17 +84,55 @@ header {
 }
 nav {
   display: flex;
-  padding: 10px 0;
-  background-color: #11817a;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  background-color: #154228;
 }
 
 nav a {
   margin-left: 30px;
   font-size: 14px;
+  color: #eee;
+  position: relative;
+  padding-bottom: 3px;
 }
 
-nav a:hover {
-  color: white;
+nav a:before {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background-color: #eee;
+}
+nav a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  -webkit-transition: opacity 0s,
+    -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s,
+    -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s,
+    -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+nav a:hover:before {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: opacity 0.2s,
+    -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s,
+    -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* main */
@@ -239,7 +277,7 @@ svg {
   content: "";
   display: block;
   width: 120px;
-  border-bottom: 3px solid #11817a;
+  border-bottom: 3px solid #154228;
   margin: 10px auto;
 }
 
