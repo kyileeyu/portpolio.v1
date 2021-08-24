@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* svg 색상 입력 */
 
 .js svg {
@@ -190,9 +194,11 @@ p.cursor {
 }
 #growth {
   margin: 0 100px;
+  padding: 100px 0;
 }
 #projects {
   margin: 0 100px;
+  padding-top: 100px;
 }
 
 .info {
